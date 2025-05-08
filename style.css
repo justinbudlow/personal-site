@@ -35,3 +35,42 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode nav a {
+    color: #90caf9;
+  }
+  
+  .dark-mode section {
+    background-color: #303030;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+
+  .dark-mode h1 {
+    color: #ffcc00; /* bright yellow as an example */
+  }
+
+  .dark-mode h2 {
+    color: #fbfbfb; /* bright yellow as an example */
+  }
+
+  .dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dark-toggle:hover {
+    background-color: #2980b9;
+  }
