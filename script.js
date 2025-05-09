@@ -17,3 +17,32 @@ toggleButton.addEventListener('click', () => {
     localStorage.setItem('theme', 'light');
   }
 });
+
+const heading = document.querySelector('h1');
+
+heading.addEventListener('click', () => {
+  heading.classList.toggle('clicked');
+});
+
+const projects = ['Music', 'Photo', 'Thoughts', 'Blog'];
+
+projects.forEach(project => {
+  console.log(`Project: ${project}`);
+});
+
+const list = document.getElementById('projectList');
+
+projects.forEach(project => {
+  const li = document.createElement('li');
+  li.textContent = project;
+  list.appendChild(li);
+});
+
+const user = {
+    name: 'Justin',
+    isDad: false
+  };
+  
+  if (user.isDad) {
+    document.body.classList.add('dad-mode');
+  }

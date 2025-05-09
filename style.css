@@ -74,3 +74,16 @@ body {
   .dark-toggle:hover {
     background-color: #2980b9;
   }
+
+.clicked {
+    opacity: 0.8;
+}
+
+.dad-mode {
+    background-color: #e0ffe0;
+    color: #1a472a;
+  }
+  
+  .dad-mode h1::after {
+    content: ' 👨‍👧‍👦';
+  }
