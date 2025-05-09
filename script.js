@@ -25,18 +25,16 @@ heading.addEventListener('click', () => {
 });
 
 const projects = ['Music', 'Photo', 'Thoughts', 'Blog'];
-
-projects.forEach(project => {
-  console.log(`Project: ${project}`);
-});
-
 const list = document.getElementById('projectList');
 
-projects.forEach(project => {
-  const li = document.createElement('li');
-  li.textContent = project;
-  list.appendChild(li);
-});
+if (list) {
+  // Only run this if we're on the page that has #projectList
+  projects.forEach(project => {
+    const li = document.createElement('li');
+    li.textContent = project;
+    list.appendChild(li);
+  });
+}
 
 const user = {
     name: 'Justin',
