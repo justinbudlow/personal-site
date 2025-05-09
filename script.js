@@ -47,9 +47,8 @@ const user = {
     document.body.classList.add('dad-mode');
   }
 
-  // Load shared navigation into the #nav-placeholder div
-fetch('nav.html') // grab the nav file
-.then(response => response.text()) // convert it to plain text
-.then(data => {
-  document.getElementById('nav-placeholder').innerHTML = data; // insert into page
-});
+  fetch('./nav.html') // add ./ to explicitly say “in the current folder”
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('nav-placeholder').innerHTML = data;
+  });
