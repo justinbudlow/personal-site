@@ -77,6 +77,7 @@ body {
 
 .clicked {
     opacity: 0.8;
+    color: #59e68a;
 }
 
 .dad-mode {
